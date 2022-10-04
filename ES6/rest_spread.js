@@ -38,7 +38,6 @@ function averageNewRest(a = 100, b = 200, ...args) {
 // console.log(fib)
 
 // Destructuring
-// const array = [1, 2, 3, 5, 8, 13];
 // const [a, b, ...c] = array
 // console.log(c)
 
@@ -85,3 +84,4 @@ const adress = {
 // делаю копию объекта и меняю свойства
 const newAddress = {...adress, street: 'Tverskaya', indexCode: '123456'}
 console.log(newAddress)
+

@@ -19,16 +19,28 @@ const person = {
 // console.log(person.toString())
 
 // Перезаписывает
-// const first = {a: 1}
-// const second = {a: 2}
+const first = {a: 1}
+const second = {a: 2}
 
-// console.log(Object.assign(first, second))
-// console.log(first)
+// Сравнение на эквивалентость
+// console.log(Object.is('20', '20'))
 
 // Объединяет
-const first = {a: 1}
-const second = {b: 2}
+// console.log(Object.assign(first, second))
+// console.log(Object.assign({}, first, second))
+// console.log(Object.assign({}, first, {
+//     c: 2,
+//     d: 3
+// }))
+// console.log(first)
+// console.log(second)
 
-console.log(Object.assign(first, second))
-console.log(first)
-console.log(second)
+// ассоциативные массивы
+const obj = Object.assign({}, first, {
+        c: 2,
+        d: 3
+    })
+console.log(Object.entries(obj)) // двухмерный массив 
+console.log(Object.keys(obj))
+console.log(Object.values(obj))
+console.log(`Ключи объекта obj: ${Object.keys(obj)}, Значения: ${Object.values(obj)}`)
