@@ -45,6 +45,6 @@ const country = {
 
 for (let item of country) {
         console.log(item)
-     }
+ }
 
      console.log(country[Symbol.iterator]().next())
